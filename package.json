@@ -10,6 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.12",
+    "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^7.0.1",
     "gulp-concat": "^2.6.1",
@@ -19,7 +20,7 @@
     "gulp-uglify": "^3.0.2",
     "magnific-popup": "^1.1.0",
     "normalize.css": "^8.0.1",
-    "slick-carousel": "^1.8.1",
-    "del": "^5.1.0"
+    "rateyo": "^2.3.5",
+    "slick-carousel": "^1.8.1"
   }
 }
