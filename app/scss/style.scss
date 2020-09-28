@@ -25,7 +25,7 @@
     font-size: 14px;
     line-height: 28px;
     background-color: $blue;
-    transition: all .3s;
+    transition: all .5s;
     margin-left: 420px;
     margin-right: auto;
 }
@@ -142,7 +142,7 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: 15px;
-            transition: all .3s;
+            transition: all .5s;
             color: #333;
         }
     }
@@ -184,7 +184,7 @@
         top: 0;
         cursor: pointer;
         outline-width: 0;
-        transition: background-color 0.3s;
+        transition: background-color 0.5s;
     }
     .header__search-btn:hover {
         background-color: #554cc3;
@@ -231,7 +231,7 @@
         padding: 20px 30px;
         cursor: pointer;
         background: transparent;
-        transition: all .3s;
+        transition: all .5s;
     }
     .search__btn:hover {
         color: $blue;
@@ -308,7 +308,7 @@
         margin-left: 30px;
         cursor: pointer;
         outline-width: 0;
-        transition: all .3s;
+        transition: all .5s;
         min-height: 60px;
     }
 
@@ -320,3 +320,50 @@
 }
     
 // end search
+
+//start features
+
+.features {
+    margin: 200px 0 120px;
+}
+
+.features__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features__item {
+    max-width: 363px;
+    text-align: center;
+    transition: all .5s;
+    .features__img {
+        max-width: 113px;
+        min-height: 120px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 30px 0;
+    }
+
+    .features__title {
+        color: #000;
+        font-size: 24px;
+    }
+
+    .features__text {
+        color: #555;
+        padding: 25px 30px 40px 30px;
+    }
+}
+
+.features__item:hover {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+}
+
+  
+
+
+
+//end features
