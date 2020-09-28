@@ -25,13 +25,16 @@
           </a>
           <div class="header__top-box">
             <a class="header__top-icon header__top-alarm" href="#"
-              style="background-image: url(images/icons/alarm.png);"></a>
+              style="background-image: url(images/icons/alarm.png);"><span
+                class="header__top-notifications header__top-notifications--alarm">25</span></a>
             <a class="header__top-icon header__top-envelope" href="#"
-              style="background-image: url(images/icons/envelope.png);"></a>
+              style="background-image: url(images/icons/envelope.png);"><span
+                class="header__top-notifications header__top-notifications--envelope">2</span></a>
             <a class="header__top-icon header__top-cart" href="#"
-              style="background-image: url(images/icons/cart.png);"></a>
+              style="background-image: url(images/icons/cart.png);"><span
+                class="header__top-notifications header__top-notifications--cart">2</span></a>
             <a class="header__top-user" href="#" style="background-image: url(images/icons/user.jpg);"></a>
-            <div class="data">
+            <div class="header__top-data">
               <a class="header__top-name" href="#">Taofiq Hakim</a>
               <a class="header__top-balance" href="#">$20.45</a>
             </div>
@@ -67,8 +70,9 @@
   </header>
 
   <main class="main">
-    <section class="search">
+    <section class="search" style="background-image: url(images/bg.jpg);">
       <div class="container">
+
         <div class="search__inner">
           <div class="search__subtitle">
             Create Your Own
@@ -79,11 +83,31 @@
           <div class="search__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
           </div>
-          <a class="search__btn" href="#"></a>
-          <a class="search__btn" href="#"></a>
+        </div>
+
+        <div class="search__btn-inner">
+          <a class="search__btn" href="#">View All Products</a>
+          <a class="search__btn" href="#">Popular Products</a>
+        </div>
+        <div class="form__inner">
+          <form class="search__form">
+            <input class="search__input" type="text" placeholder="Search your products...">
+            <select class="search__select" name="All Categories">
+              <option value="">All Categories</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <button class="search__main-btn " type="submit">Search Now</button>
+          </form>
         </div>
       </div>
+  
     </section>
+    
+    <section class="features">
+      
+    </section>
+
   </main>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
