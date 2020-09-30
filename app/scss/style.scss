@@ -25,7 +25,7 @@
     font-size: 14px;
     line-height: 28px;
     background-color: $blue;
-    transition: all .5s;
+    transition: all .3s;
     margin-left: 420px;
     margin-right: auto;
 }
@@ -33,6 +33,10 @@
 .header__top-btn:hover {
     color: #2c80ed;
     background-color: #fff;
+}
+
+.header__top-btn:active {
+    color: #d6dde6;
 }
 
 .header__top-icon {
@@ -116,8 +120,10 @@
             text-transform: uppercase;
             font-weight: 500;
             font-size: 15px;
-            transition: all .5s;
+            transition: all .3s;
             color: #333;
+            border-bottom: 3px solid transparent;
+            
         }
     }
     .menu__item + .menu__item {
@@ -125,6 +131,12 @@
     }
     .menu__link:hover {
         color: $blue;
+        border-bottom: 3px solid $blue;
+    }
+
+    .menu__link:active {
+        color: #fff;
+        border-bottom: 3px solid #fff;
     }
 }
 
@@ -205,14 +217,18 @@
         padding: 20px 30px;
         cursor: pointer;
         background: transparent;
-        transition: all .5s;
+        transition: all .3s;
     }
     .search__btn:hover {
         color: $blue;
         background-color: #fff;
     }
+
+    .search__btn:active {
+        color: #d6dde6;
+    }
 }
-  
+
 .form__inner {
     position: relative;
     max-width: 1140px;
@@ -615,7 +631,9 @@
     margin-right: 20px;
 }
 
-.filter__menu-drop-domw {
+.filter__menu-drop {
+    position: relative;
+    display: block;
     height: 20px;
     width: 5px;
     background-position: center;
@@ -625,6 +643,55 @@
 }
 
 //end filter
+
+// start filter-dropdown
+
+.drop-down__list {
+    display: none;
+    position: absolute;
+    right: -20px;
+    top: 40px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 180px;
+    background-color: #fff;
+    box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+    border-radius: 3px;
+}
+
+.drop-down__list::before {
+    content: "";
+    position: absolute;
+    top: -20px; 
+    right: 12px; 
+    border: 10px solid transparent;
+    border-bottom: 20px solid #fff;
+}
+  
+.drop-down__list-link {
+    color: #747b86;
+    font-size: 13px;
+    line-height: 15px;
+    text-transform: none;
+    padding: 0 30px 0 25px;
+    transition: color .3s;
+}
+
+.drop-down__list-link:hover {
+    color: $blue;
+}
+
+.drop-down__list:first-child {
+    padding-top: 20px;
+}
+
+.drop-down__list:last-child {
+    padding-bottom: 20px;
+}
+
+
+//end filter-dropdown
 
 //start products
 
@@ -804,8 +871,14 @@
     }
 }
 
+.producuts__btn-box {
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 120px;
+}
+
 .products__bottom-btn {
-    margin: 60px auto 120px auto ;
+    
     border: none;
     color: #fff;
     background-color: $blue;
