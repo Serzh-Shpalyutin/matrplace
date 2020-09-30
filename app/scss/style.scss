@@ -59,6 +59,7 @@
 }
 
 .header__top-envelope {
+    position: relative;
     width: 21px;
     height: 14px;
 }
@@ -69,12 +70,33 @@
 }
 
 .header__top-notifications {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px;
-    height: 23px;
+    position: absolute;
+    height: 22px;
     width: 26px;
-    padding: 7px;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 11px;
+    margin: 1em;
+    line-height: 22px;
+}
+
+.header__top-notifications--alarm {
+    top: -11px;
+    left: 0;
+    background-color: #ff6a6c;
+}
+
+.header__top-notifications--envelope {
+    top: -11px;
+    left: 58px;
+    background-color: #62d03b;
+}
+
+.header__top-notifications--cart {
+    top: -11px;
+    left: 112px;
+    background-color: $blue;
 }
   
 .header__top-user {
@@ -667,6 +689,7 @@
     right: 12px; 
     border: 10px solid transparent;
     border-bottom: 20px solid #fff;
+    transition-duration: 1s;
 }
   
 .drop-down__list-link {
@@ -742,13 +765,15 @@
 }
 
 .products__box {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
 .product__card {
-    max-width: 360px;
+    position: relative;
+    max-width: 361px;
     width: 100%;
     border-radius: 4px;
     background-color: rgb(255, 255, 255);
@@ -763,10 +788,43 @@
         background-position: center;
         background-size: cover;
     }
-    
+
+    .product__item-hover {
+        position: absolute;
+        background-image: url(../images/product-hover.jpg);
+        top: 0;
+        left: 0;
+        width: 361px;
+        height: 230px;  
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
+        transition: all .3s;
+    }
+
+    .product__btn-hover {
+        color: #fff;
+        background-color: transparent;
+        font-size: 14px;
+        border: 1px solid #fff;
+        padding: 13px 28px;
+        border-radius: 30px;
+        margin: 0px 6px;
+        transition: all .3s;
+    }
+
+    .product__btn-hover:hover {
+        background-color: #fff;
+        color: $blue;        
+    }
+
+    .product__item-hover:hover {
+        opacity: 1;
+    }
+
     .product__title {
         font-size: 20px;
-        
         font-weight: 500;
         padding: 30px 0px 18px 30px;
     }
