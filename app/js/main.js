@@ -7,7 +7,7 @@ $(function () {
     });
 
     $('.filter__menu-drop').on('click', function(){
-        $('.drop-down__list').slideToggle();
+        $('.drop-down').slideToggle();
     });
 
     $(function () {
