@@ -27,23 +27,23 @@
           <div class="header__box">
             <a class="header__icons" href="#">
               <span class="lnr lnr-alarm"></span>
-              <span class="header__notification notification--red">25</span>
+              <span class="header__notification header__notification--red">25</span>
             </a>
 
-            <a class="header__icons" href="#">
+            <a class="header__icons header__icons--evelope" href="#">
               <span class="lnr lnr-envelope"></span>
-              <span class="header__notification notification--green">6</span>
+              <span class="header__notification header__notification--green">6</span>
             </a>
 
-            <a class="header__icons" href="#">
+            <a class="header__icons header__icons--cart" href="#">
               <span class="lnr lnr-cart"></span>
-              <span class="header__notification notification--blue">5</span>
+              <span class="header__notification header__notification--blue">2</span>
             </a>
 
             <a class="header__user" href="#">
               <span class="user__avatar" style="background-image: url(images/icons/user.jpg);"></span>
               <div class="user__info">
-                <span class="user__name">Taofiq Hakim<br></span>
+                <span class="user__name">Taofiq Hakim</span>
                 <span class="user__balance">$20.45</span>
               </div>
             </a>
@@ -100,6 +100,7 @@
           <a class="btn btn--white search__btn" href="#">View All Products</a>
           <a class="btn search__btn" href="#">Popular Products</a>
         </div>
+
         <div class="form__inner">
           <form class="search__form">
             <label for="search">
@@ -111,11 +112,9 @@
               <option value=""></option>
             </select>
             <button class="btn search__main-btn" type="submit">Search Now</button>
-
           </form>
         </div>
       </div>
-
     </section>
 
     <section class="features">
@@ -173,16 +172,16 @@
           <div class="weekly__items">
 
             <div class="weekly__item">
-              <img class="weekly__img" src="images/portfolio.jpg" alt="">
+              <img class="weekly__img" src="images/portfolio.jpg" alt="weekly">
               <div class="weekly__content">
                 <a class="weekly__content-title" href="#">
                   One Page Resume Template
                 </a>
 
                 <a class="weekly-user" href="#">
-                  <span class="user__avatar weekly__user--avatar"
-                    style="background-image: url(images/icons/user.jpg);"></span>
-                  <div class="user__info">
+                  <span class="user__avatar weekly__user--avatar" style="background-image: url(images/icons/user.jpg);">
+                  </span>
+                  <div class="user__info weekly__user--info">
                     <span class="user__name weekly__user--name" href="#">AazzTech</span>
                     <span class="weekly__icon" style="background-image: url(images/icons/wp.svg);"></span>
                     <span class="weekly__platform">WordPress</span>
@@ -208,7 +207,7 @@
                   </a>
                   <a class="" href="#"><span class="weekly__cart--numb">634</span></a>
                   <div class="weekly__star">
-                    <div class="rate-star"></div>(05)
+                    <div class="rate-star"></div>
                   </div>
 
                 </div>
@@ -219,16 +218,16 @@
           <div class="weekly__items">
 
             <div class="weekly__item">
-              <img class="weekly__img" src="images/portfolio.jpg" alt="">
+              <img class="weekly__img" src="images/portfolio.jpg" alt="weekly">
               <div class="weekly__content">
                 <a class="weekly__content-title" href="#">
                   One Page Resume Template
                 </a>
 
                 <a class="weekly-user" href="#">
-                  <span class="user__avatar weekly__user--avatar"
-                    style="background-image: url(images/icons/user.jpg);"></span>
-                  <div class="user__info">
+                  <span class="user__avatar weekly__user--avatar" style="background-image: url(images/icons/user.jpg);">
+                  </span>
+                  <div class="user__info weekly__user--info">
                     <span class="user__name weekly__user--name" href="#">AazzTech</span>
                     <span class="weekly__icon" style="background-image: url(images/icons/wp.svg);"></span>
                     <span class="weekly__platform">WordPress</span>
@@ -254,7 +253,7 @@
                   </a>
                   <a class="" href="#"><span class="weekly__cart--numb">634</span></a>
                   <div class="weekly__star">
-                    <div class="rate-star"></div>(05)
+                    <div class="rate-star"></div>
                   </div>
 
                 </div>
@@ -296,359 +295,342 @@
       <div class="container">
         <div class="products__inner">
           <div class="products__inner-btn">
-            <button class="btn product__mix-btn" type="button" data-filter="all">All</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-plugins">Plugins</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-wp">WordPress</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-st">Site Template</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-psd">PSD Template</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-joomla">Joomla</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-ui">User Interface</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-lp">Landing Page</button>
-            <button class="btn product__mix-btn" type="button" data-filter=".category-software">Software</button>
+            <button class="btn products__mix-btn" type="button" data-filter="all">All</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-plugins">Plugins</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-wp">WordPress</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-st">Site Template</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-psd">PSD Template</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-joomla">Joomla</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-ui">User Interface</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-lp">Landing Page</button>
+            <button class="btn products__mix-btn" type="button" data-filter=".category-software">Software</button>
           </div>
 
           <div class="products__box">
 
-            <div class="product__card mix category-wp category-new category-plugins" data-order="3">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
               </div>
 
-              <div class="product__item-hover">
-                <a class="btn product__btn-hover" href="#">More Info</a>
-                <a class="btn product__btn-hover" href="#">Live Demo</a>
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
               </div>
 
-              <div class="product__content">
-                <a class="product__title" href="#">
+              <div class="products__content">
+                <a class="products__title" href="#">
                   E-commerce Shopping Cart
                 </a>
-                <div class="product__info">
+                <div class="products__info">
                   <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="avatar">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
                   </a>
-                  <a href="" class="product__info-name">
+                  <a href="" class="products__info-name">
                     Theme-Valley
                   </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
-                  <a class="product__info-platform" href="#">
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
                     Plugin
                   </a>
                 </div>
-                <p class="product__text">
+                <p class="products__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                   the mattis, leo quam aliquet congue.
                 </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
                     $20
                   </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
                     90
                   </span>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
+                  </div>
+
                   <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
                   </a>
-                  <span class="product__feedback-bought">
+                  <span class="products__feedback-bought">
                     246
                   </span>
                 </div>
               </div>
             </div>
 
-            <div class="product__card mix category-psd" data-order="5">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
               </div>
 
-              <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
               </div>
 
-              <div class="product__content">
-                <a class="product__title" href="#">
-                  Marketify Coffee Shop
-                </a>
-                <div class="product__info">
-                  <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="">
-                  </a>
-                  <a href="" class="product__info-name">
-                    EchoTheme
-                  </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/ps.svg);"></span>
-                  <a class="product__info-platform" href="">
-                    PSD
-                  </a>
-                </div>
-                <p class="product__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
-                </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
-                    $18
-                  </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
-                    48
-                  </span>
-                  <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
-                  </a>
-                  <span class="product__feedback-bought">
-                    50
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="product__card mix category-st category-new" data-order="4">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
-              </div>
-
-              <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
-              </div>
-
-              <div class="product__content">
-                <a class="product__title" href="#">
-                  Bryson - Portfolio Template
-                </a>
-                <div class="product__info">
-                  <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="">
-                  </a>
-                  <a href="" class="product__info-name">
-                    Artcorner
-                  </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/ps.svg);"></span>
-                  <a class="product__info-platform" href="">
-                    HTML
-                  </a>
-                </div>
-                <p class="product__text">
-                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-                  the mattis, leo quam aliquet congue.
-                </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
-                    $10
-                  </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
-                    56
-                  </span>
-                  <div class="rating-area product__feedback-rating">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
-                  </div>
-                  <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
-                  </a>
-                  <span class="product__feedback-bought">
-                    68
-                  </span>
-                </div>
-              </div>
-            </div>
-
-            <div class="product__card mix category-wp category-st" data-order="6">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
-              </div>
-
-              <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
-              </div>
-
-              <div class="product__content">
-                <a class="product__title" href="#">
+              <div class="products__content">
+                <a class="products__title" href="#">
                   E-commerce Shopping Cart
                 </a>
-                <div class="product__info">
+                <div class="products__info">
                   <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
                   </a>
-                  <a href="" class="product__info-name">
-                    Design-Hub
+                  <a href="" class="products__info-name">
+                    Theme-Valley
                   </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
-                  <a class="product__info-platform" href="">
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
                     Plugin
                   </a>
                 </div>
-                <p class="product__text">
+                <p class="products__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                   the mattis, leo quam aliquet congue.
                 </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
-                    $10 - 50
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
+                    $20
                   </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
                     90
                   </span>
-                  <div class="rating-area product__feedback-rating">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
                   </div>
+
                   <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
                   </a>
-                  <span class="product__feedback-bought">
-                    45
+                  <span class="products__feedback-bought">
+                    246
                   </span>
                 </div>
               </div>
             </div>
 
-            <div class="product__card mix category-plugins" data-order="2">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
               </div>
 
-              <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
               </div>
 
-              <div class="product__content">
-                <a class="product__title" href="#">
-                  Marketify Coffee Shop
+              <div class="products__content">
+                <a class="products__title" href="#">
+                  E-commerce Shopping Cart
                 </a>
-                <div class="product__info">
+                <div class="products__info">
                   <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
                   </a>
-                  <a href="" class="product__info-name">
-                    AazzTech
+                  <a href="" class="products__info-name">
+                    Theme-Valley
                   </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/ps.svg);"></span>
-                  <a class="product__info-platform" href="">
-                    PSD
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
+                    Plugin
                   </a>
                 </div>
-                <p class="product__text">
+                <p class="products__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                   the mattis, leo quam aliquet congue.
                 </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
-                    $10 - 50
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
+                    $20
                   </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
-                    48
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
+                    90
                   </span>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
+                  </div>
+
                   <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
                   </a>
-                  <span class="product__feedback-bought">
-                    50
+                  <span class="products__feedback-bought">
+                    246
                   </span>
                 </div>
               </div>
             </div>
 
-            <div class="product__card mix category-ui category-new" data-order="1">
-              <div class="product__card-img">
-                <img class="product__img" src="images/product.jpg" alt="product">
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
               </div>
 
-              <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
               </div>
 
-              <div class="product__content">
-                <a class="product__title" href="#">
-                  Bryson - Portfolio Template
+              <div class="products__content">
+                <a class="products__title" href="#">
+                  E-commerce Shopping Cart
                 </a>
-                <div class="product__info">
+                <div class="products__info">
                   <a href="">
-                    <img class="product__info-avatar" src="images/icons/user.jpg" alt="">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
                   </a>
-                  <a href="" class="product__info-name">
-                    Coder-Lab
+                  <a href="" class="products__info-name">
+                    Theme-Valley
                   </a>
-                  <span class="product__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
-                  <a class="product__info-platform" href="">
-                    HTML
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
+                    Plugin
                   </a>
                 </div>
-                <p class="product__text">
+                <p class="products__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                   the mattis, leo quam aliquet congue.
                 </p>
-                <div class="product__feedback">
-                  <a href="" class="product__feedback-price">
-                    $10
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
+                    $20
                   </a>
-                  <a class="product__feedback-like far fa-heart" href="#">
-                    <i></i>
-                  </a>
-                  <span class="product__feedback-numb">
-                    56
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
+                    90
                   </span>
-                  <div class="rating-area product__feedback-rating">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
                   </div>
+
                   <a href="#">
-                    <span class="product__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
                   </a>
-                  <span class="product__feedback-bought">
-                    68
+                  <span class="products__feedback-bought">
+                    246
                   </span>
                 </div>
               </div>
             </div>
 
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
+              </div>
+
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
+              </div>
+
+              <div class="products__content">
+                <a class="products__title" href="#">
+                  E-commerce Shopping Cart
+                </a>
+                <div class="products__info">
+                  <a href="">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
+                  </a>
+                  <a href="" class="products__info-name">
+                    Theme-Valley
+                  </a>
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
+                    Plugin
+                  </a>
+                </div>
+                <p class="products__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
+                    $20
+                  </a>
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
+                    90
+                  </span>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
+                  </div>
+
+                  <a href="#">
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                  </a>
+                  <span class="products__feedback-bought">
+                    246
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="products__card mix category-wp category-new category-plugins" data-order="3">
+              <div class="products__card-img">
+                <img class="products__img" src="images/product.jpg" alt="product">
+              </div>
+
+              <div class="products__item-hover">
+                <a class="btn products__btn-hover" href="#">More Info</a>
+                <a class="btn products__btn-hover" href="#">Live Demo</a>
+              </div>
+
+              <div class="products__content">
+                <a class="products__title" href="#">
+                  E-commerce Shopping Cart
+                </a>
+                <div class="products__info">
+                  <a href="">
+                    <img class="products__info-avatar" src="images/icons/user.jpg" alt="avatar">
+                  </a>
+                  <a href="" class="products__info-name">
+                    Theme-Valley
+                  </a>
+                  <span class="products__info-icon" style="background-image: url(images/icons/wp.svg);"></span>
+                  <a class="products__info-platform" href="#">
+                    Plugin
+                  </a>
+                </div>
+                <p class="products__text">
+                  Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                  the mattis, leo quam aliquet congue.
+                </p>
+                <div class="products__feedback">
+                  <a href="" class="products__feedback-price">
+                    $20
+                  </a>
+                  <span class="lnr lnr-heart products--heart"></span>
+                  <span class="products__feedback-numb">
+                    90
+                  </span>
+
+                  <div class="products__star">
+                    <div class="rate-star products__rate--star"></div>
+                  </div>
+
+                  <a href="#">
+                    <span class="products__feedback-cart" style="background-image: url(images/icons/cart.png);"></span>
+                  </a>
+                  <span class="products__feedback-bought">
+                    246
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="producuts__btn-box">
-            <button class="products__bottom-btn" type="button" data-filter=".category-new">All New Products</button>
+
+          <div class="products__btn-box">
+            <button class="btn products__bottom-btn" type="button" data-filter=".category-new">All New Products</button>
           </div>
+
         </div>
       </div>
     </section>
