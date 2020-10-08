@@ -7,6 +7,7 @@
   <title>Martplace | Home Page
   </title>
   <link rel="icon" href="images/icons/Logo-icon.png">
+  <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -16,31 +17,37 @@
   <header class="header">
     <div class="header__top">
       <div class="container">
-        <div class="header__top-inner">
-          <a class="header__top-logo" href="">
-            <img class="" src="images/Logo.png" alt="">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="images/Logo.png" alt="logo">
           </a>
-          <a class="header__top-btn" href="#">
+          <a class="btn header__btn" href="#">
             Become a Seller
           </a>
-          <div class="header__top-box">
-            <a class="header__top-icon header__top-alarm" href="#"
-              style="background-image: url(images/icons/alarm.png);">
+          <div class="header__box">
+            <a class="header__icons" href="#">
+              <span class="lnr lnr-alarm"></span>
+              <span class="header__notification notification--red">25</span>
             </a>
-            <a class="header__top-notifications header__top-notifications--alarm" href="#">25</a>
-            <a class="header__top-icon header__top-envelope" href="#"
-              style="background-image: url(images/icons/envelope.png);">
+
+            <a class="header__icons" href="#">
+              <span class="lnr lnr-envelope"></span>
+              <span class="header__notification notification--green">6</span>
             </a>
-            <a class="header__top-notifications header__top-notifications--envelope" href="#">6</a>
-            <a class="header__top-icon header__top-cart" href="#"
-              style="background-image: url(images/icons/cart-logo.png);">
+
+            <a class="header__icons" href="#">
+              <span class="lnr lnr-cart"></span>
+              <span class="header__notification notification--blue">5</span>
             </a>
-            <a class="header__top-notifications header__top-notifications--cart" href="#">2</a>
-            <a class="header__top-user" href="#" style="background-image: url(images/icons/user.jpg);"></a>
-            <div class="header__top-data">
-              <a class="header__top-name" href="#">Taofiq Hakim</a>
-              <a class="header__top-balance" href="#">$20.45</a>
-            </div>
+
+            <a class="header__user" href="#">
+              <span class="user__avatar" style="background-image: url(images/icons/user.jpg);"></span>
+              <div class="user__info">
+                <span class="user__name">Taofiq Hakim<br></span>
+                <span class="user__balance">$20.45</span>
+              </div>
+            </a>
+
           </div>
         </div>
       </div>
@@ -48,61 +55,63 @@
 
     <div class="header__menu">
       <div class="container">
-
-        <nav class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">all products</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">festures</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
-          </ul>
+        <div class="menu__inner">
+          <nav class="header__nav">
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">all products</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">wordpress</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">festures</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Pages</a></li>
+            </ul>
+          </nav>
 
           <div class="header__search-form">
-            <form>
-              <input class="header__search-input" type="text" placeholder="Search product here..." required>
-              <button class="header__search-btn" type="submit">
-                <img class="header__search-img" src="images/icons/search.png" alt="search">
+            <form action="#">
+              <label for="header__search">
+                <input class="header__search-input" type="text" name="header__search"
+                  placeholder="Search product here..." required>
+              </label>
+              <button class="btn header__search-btn" type="submit">
+                <span class="lnr lnr-magnifier search--icon"></span>
               </button>
             </form>
           </div>
-        </nav>
 
+        </div>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <section class="search" style="background-image: url(images/bg.jpg);">
+    <section class="intro">
       <div class="container">
 
-        <div class="search__inner">
-          <div class="search__subtitle">
-            Create Your Own
+        <div class="intro__inner">
+          <div class="intro__title">
+            Create Your Own <span class="intro__title-allocated">Digital Product Marketplace</span>
           </div>
-          <div class="search__title">
-            Digital Product Marketplace
-          </div>
-          <div class="search__text">
+          <p class="intro__text">
             MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
-          </div>
+          </p>
         </div>
 
-        <div class="search__btn-inner">
-          <a class="search__btn" href="#">View All Products</a>
-          <a class="search__btn" href="#">Popular Products</a>
+        <div class="search__btns">
+          <a class="btn btn--white search__btn" href="#">View All Products</a>
+          <a class="btn search__btn" href="#">Popular Products</a>
         </div>
         <div class="form__inner">
           <form class="search__form">
-            <label for="search__select">
-              <input class="search__input" type="text" placeholder="Search your products...">
-              <select class="search__select" name="All Categories">
-                <option value="">All Categories</option>
-                <option value=""></option>
-                <option value=""></option>
-              </select>
-              <button class="search__main-btn" type="submit">Search Now</button>
+            <label for="search">
+              <input class="search__input" name="search" type="text" placeholder="Search your products...">
             </label>
+            <select class="search__select" name="All Categories">
+              <option value="">All Categories</option>
+              <option value=""></option>
+              <option value=""></option>
+            </select>
+            <button class="btn search__main-btn" type="submit">Search Now</button>
+
           </form>
         </div>
       </div>
@@ -114,7 +123,7 @@
         <div class="features__inner">
 
           <div class="features__item">
-            <img class="features__img" src="images/features/Layer65.jpg" alt="features">
+            <div class="features__img" style="background-image: url(images/features/Layer65.jpg);"></div>
             <div class="features__title">
               Best UX Research
             </div>
@@ -126,7 +135,7 @@
           </div>
 
           <div class="features__item">
-            <img class="features__img" src="images/features/Layer66.jpg" alt="features">
+            <div class="features__img" style="background-image: url(images/features/Layer66.jpg);"></div>
             <div class="features__title">
               Fully Responsive
             </div>
@@ -138,7 +147,7 @@
           </div>
 
           <div class="features__item">
-            <img class="features__img" src="images/features/Layer67.jpg" alt="features">
+            <div class="features__img" style="background-image: url(images/features/Layer67.jpg);"></div>
             <div class="features__title">
               Buy & Sell Easily
             </div>
@@ -153,62 +162,53 @@
       </div>
     </section>
 
-    <section class="slider">
+    <section class="weekly">
       <div class="container">
-        <div class="main__title main__title--slider">
+        <div class="main__title weekly__title--slider">
           Weekly Featured Products
         </div>
 
-        <div class="slider__inner">
+        <div class="weekly__inner">
 
-          <div class="slider__items">
-            <div class="slider__item">
-              <img class="slider__img" src="images/portfolio.jpg" alt="">
-              <div class="slider__content">
-                <a class="slider__content-title" href="#">
+          <div class="weekly__items">
+
+            <div class="weekly__item">
+              <img class="weekly__img" src="images/portfolio.jpg" alt="">
+              <div class="weekly__content">
+                <a class="weekly__content-title" href="#">
                   One Page Resume Template
                 </a>
-                <div class="slider__user">
-                  <img class="slider__user-avatar" src="images/icons/user.jpg" alt="">
-                  <a class="slider__username" href="#">
-                    AazzTech
-                  </a>
-                  <span class="slider__icon" style="background-image: url(images/icons/wp.svg);"></span>
-                  <a class="slider__platform" href="#">
-                    WordPress
-                  </a>
-                </div>
-                <p class="slider__text">
+
+                <a class="weekly-user" href="#">
+                  <span class="user__avatar weekly__user--avatar"
+                    style="background-image: url(images/icons/user.jpg);"></span>
+                  <div class="user__info">
+                    <span class="user__name weekly__user--name" href="#">AazzTech</span>
+                    <span class="weekly__icon" style="background-image: url(images/icons/wp.svg);"></span>
+                    <span class="weekly__platform">WordPress</span>
+                  </div>
+                </a>
+
+                <p class="weekly__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                   aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
                   mattis, leo quam aliquet congue justo ut scelerisque.
                 </p>
-                <div class="slider__tags">
-                  <a class="slider__tag" href="#">website</a>
-                  <a class="slider__tag" href="#">plugin</a>
-                  <a class="slider__tag" href="#">landing page</a>
+                <div class="weekly__tags">
+                  <a class="btn weekly__tag" href="#">website</a>
+                  <a class="btn weekly__tag" href="#">plugin</a>
+                  <a class="btn weekly__tag" href="#">landing page</a>
                 </div>
-                <div class="slider__info">
-                  <a class="slider__price" href="#">$10 - $50</a>
-                  <a href="#"><i class="far fa-heart"></i></a>
-                  <span class="slider__numb">46</span>
-                  <a class="slider__link-cart" href="#">
-                    <span class="slider__icon-cart" style="background-image: url(images/icons/cart.png);">
-                    </span>
+                <div class="weekly__info">
+                  <a class="weekly__price" href="#">$10 - $50</a>
+                  <span class="lnr lnr-heart weekly--heart"></span>
+                  <span class="weekly__numb">46</span>
+                  <a class="weekly__link-cart" href="#">
+                    <span class="lnr lnr-cart weekly__icon-cart"></span>
                   </a>
-                  <a class="" href="#"><span class="slider__cart-numb">634</span></a>
-
-                  <div class="rating-area">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+                  <a class="" href="#"><span class="weekly__cart--numb">634</span></a>
+                  <div class="weekly__star">
+                    <div class="rate-star"></div>(05)
                   </div>
 
                 </div>
@@ -216,56 +216,45 @@
             </div>
           </div>
 
-          <div class="slider__items">
-            <div class="slider__item">
-              <img class="slider__img" src="images/portfolio.jpg" alt="">
-              <div class="slider__content">
-                <a class="slider__content-title" href="#">
+          <div class="weekly__items">
+
+            <div class="weekly__item">
+              <img class="weekly__img" src="images/portfolio.jpg" alt="">
+              <div class="weekly__content">
+                <a class="weekly__content-title" href="#">
                   One Page Resume Template
                 </a>
-                <div class="slider__user">
-                  <img class="slider__user-avatar" src="images/icons/user.jpg" alt="">
-                  <a class="slider__username" href="#">
-                    AazzTech
-                  </a>
-                  <span class="slider__icon" style="background-image: url(images/icons/wp.svg);"></span>
-                  <a class="slider__platform" href="#">
-                    WordPress
-                  </a>
-                </div>
-                <p class="slider__text">
+
+                <a class="weekly-user" href="#">
+                  <span class="user__avatar weekly__user--avatar"
+                    style="background-image: url(images/icons/user.jpg);"></span>
+                  <div class="user__info">
+                    <span class="user__name weekly__user--name" href="#">AazzTech</span>
+                    <span class="weekly__icon" style="background-image: url(images/icons/wp.svg);"></span>
+                    <span class="weekly__platform">WordPress</span>
+                  </div>
+                </a>
+
+                <p class="weekly__text">
                   Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
                   aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the
-                  mattis,
-                  leo quam aliquet congue justo ut scelerisque.
+                  mattis, leo quam aliquet congue justo ut scelerisque.
                 </p>
-                <div class="slider__tags">
-                  <a class="slider__tag" href="#">website</a>
-                  <a class="slider__tag" href="#">plugin</a>
-                  <a class="slider__tag" href="#">landing page</a>
+                <div class="weekly__tags">
+                  <a class="btn weekly__tag" href="#">website</a>
+                  <a class="btn weekly__tag" href="#">plugin</a>
+                  <a class="btn weekly__tag" href="#">landing page</a>
                 </div>
-                <div class="slider__info">
-                  <a class="slider__price" href="#">$10 - $50</a>
-                  <a href="#"><i class="far fa-heart"></i></a>
-                  <span class="slider__numb">46</span>
-                  <a class="slider__link-cart" href="#">
-                    <span class="slider__icon-cart" style="background-image: url(images/icons/cart.png);">
-                    </span>
+                <div class="weekly__info">
+                  <a class="weekly__price" href="#">$10 - $50</a>
+                  <span class="lnr lnr-heart weekly--heart"></span>
+                  <span class="weekly__numb">46</span>
+                  <a class="weekly__link-cart" href="#">
+                    <span class="lnr lnr-cart weekly__icon-cart"></span>
                   </a>
-                  <a class="" href="#"><span class="slider__cart-numb">634</span>
-                  </a>
-
-                  <div class="rating-area">
-                    <input type="radio" id="star-5" name="rating" value="5">
-                    <label for="star-5" title="Оценка «5»"></label>
-                    <input type="radio" id="star-4" name="rating" value="4">
-                    <label for="star-4" title="Оценка «4»"></label>
-                    <input type="radio" id="star-3" name="rating" value="3">
-                    <label for="star-3" title="Оценка «3»"></label>
-                    <input type="radio" id="star-2" name="rating" value="2">
-                    <label for="star-2" title="Оценка «2»"></label>
-                    <input type="radio" id="star-1" name="rating" value="1">
-                    <label for="star-1" title="Оценка «1»"></label>
+                  <a class="" href="#"><span class="weekly__cart--numb">634</span></a>
+                  <div class="weekly__star">
+                    <div class="rate-star"></div>(05)
                   </div>
 
                 </div>
@@ -307,15 +296,15 @@
       <div class="container">
         <div class="products__inner">
           <div class="products__inner-btn">
-            <button class="product__mix-btn" type="button" data-filter="all">All</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-plugins">Plugins</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-wp">WordPress</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-st">Site Template</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-psd">PSD Template</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-joomla">Joomla</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-ui">User Interface</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-lp">Landing Page</button>
-            <button class="product__mix-btn" type="button" data-filter=".category-software">Software</button>
+            <button class="btn product__mix-btn" type="button" data-filter="all">All</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-plugins">Plugins</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-wp">WordPress</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-st">Site Template</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-psd">PSD Template</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-joomla">Joomla</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-ui">User Interface</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-lp">Landing Page</button>
+            <button class="btn product__mix-btn" type="button" data-filter=".category-software">Software</button>
           </div>
 
           <div class="products__box">
@@ -326,8 +315,8 @@
               </div>
 
               <div class="product__item-hover">
-                <a class="product__btn-hover" href="#">More Info</a>
-                <a class="product__btn-hover" href="#">Live Demo</a>
+                <a class="btn product__btn-hover" href="#">More Info</a>
+                <a class="btn product__btn-hover" href="#">Live Demo</a>
               </div>
 
               <div class="product__content">
