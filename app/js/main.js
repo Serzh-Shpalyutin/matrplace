@@ -3,7 +3,7 @@ $(function () {
     $('.weekly__inner').slick({
         // autoplay: true,
         // autoplaySpeed: 2000,
-        appendArrows: $('.weekly__title--slider'),
+        appendArrows: $('.title--slider'),
     });
 
     $('.filter__menu-drop').on('click', function(){
@@ -19,6 +19,13 @@ $(function () {
         starWidth: "12px",
         readOnly: true,
         spacing   : "5px"
+      });
+
+      $('.followers__items').slick({
+        // infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true
       });
 
 });

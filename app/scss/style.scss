@@ -415,11 +415,7 @@
 
 .weekly {
     padding: 115px 0 100px;
-    background-color: #eff1f5;
-
-    &__title--slider {
-        position: relative;
-    }
+    background-color: $bg;
 
     &__item {
         position: relative;
@@ -559,10 +555,8 @@
     }
     
     &__cart--numb {
-        // position: absolute;
         color: $blue;
         margin-left: 45px;
-        bottom: 32px;
     }
     
     &__star {
@@ -575,6 +569,8 @@
         left: 140px;
     }
 }
+
+
 
 .info {
     display: flex;
@@ -621,7 +617,7 @@
     cursor: pointer;
 }
 
-.main__title {
+.title {
     color: #000;
     font-size: 30px;
     background-color: #fff;
@@ -629,6 +625,10 @@
     padding: 39px 80px 39px 35px;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
     border-radius: 4px;
+}
+
+.title--slider {
+    position: relative;
 }
 
 .weekly__user--info {
@@ -831,6 +831,7 @@
         font-size: 20px;
         font-weight: 500;
         padding: 25px 0px 18px 35px;
+        color: #000;
     }
     
     &__info {
@@ -967,6 +968,7 @@
 }
 
 .products__btn-box {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     padding-bottom: 120px;
@@ -998,5 +1000,72 @@
 
 //end products
 
+//start followers
 
-  
+.followers {
+    background-color: $bg;
+    padding: 120px 0 96px;
+    &--title {
+        margin-bottom: 50px;
+    }
+
+    &__items { 
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+//end followers
+
+
+//start overlay
+
+.overlay {
+    background-color: $bg-dark;
+    padding: 94px 0px 95px;
+    margin-bottom: 50px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        text-align: center;
+    }
+
+    &--icons {
+        display: block;
+        font-size: 48px;
+        margin-bottom: 38px;
+    }
+
+    &--yellow {
+        color: #feb71d;
+    }
+
+    &--blue {
+        color: #58c9e9;
+    }
+
+    &--green {
+        color: #77de51;
+    }
+
+    &--red {
+        color: #ff6a6d;
+    }
+
+    &__numb {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    &__text {
+        margin-top: 12px;
+        display: block;
+        font-size: 18px;
+        color: #fff;
+    }
+}
+
+//end overlay
