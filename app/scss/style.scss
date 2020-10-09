@@ -805,8 +805,6 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
-   
 }
 
 .product-card {
@@ -1023,7 +1021,7 @@
 .overlay {
     background-color: $bg-dark;
     padding: 94px 0px 95px;
-    margin-bottom: 50px;
+    margin-bottom: 120px;
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -1069,3 +1067,94 @@
 }
 
 //end overlay
+
+//start choose
+
+.choose {
+    padding-bottom: 115px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__title {  
+        font-size: 36px;
+        line-height: 28px;
+        color: #000;
+        margin-bottom: 15px;
+    }
+
+    &__title--blue {
+        color: $blue;
+    }
+
+    &__text {
+        display: inline-block;
+        max-width: 690px;
+        margin-bottom: 55px;
+        line-height: 30px;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+      
+    &__numb {
+        position: absolute;
+        top: 10px;
+        left: 18px;
+        font-size: 48px;
+        color: rgba(92, 135, 248, 0.2);
+        font-weight: 300;
+    }   
+
+}
+
+.choose-item {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    padding-top: 50px;
+    margin-bottom: 30px;
+
+    &__icon {
+        font-size: 60px;
+    }
+
+    &__title {
+        margin-top: 45px;
+    }
+
+    &__text {
+        padding-bottom: 38px;
+    }
+
+    &--license {
+        color: $blue;
+    }
+
+    &--magic {
+        color: #7f4ec2;
+    }
+
+    &--lock {
+        color: #77de51;
+    }
+
+    &--bars {
+        color: #feb71d;
+    }
+
+    &--leaf {
+        color: #58c9e9;
+    }
+
+    &--phone {
+        color: #ff6a6d;
+    }
+
+}
+
+//end choose
