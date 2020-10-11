@@ -974,7 +974,7 @@
     padding-bottom: 120px;
 }
 
-.products__bottom-btn {
+.btn--blue {
     border: none;
     color: #fff;
     background-color: $blue;
@@ -991,6 +991,7 @@
         background-color: #fff;
     }
 }
+
 
 .mixitup-control-active {
     background-color: $blue;
@@ -1164,13 +1165,15 @@
 //start trade 
 
 .trade {
+    margin-bottom: 120px;
     &__inner {
         display: flex;
     }
 
     &__bg {
         position: relative;
-        width: 963px;
+        max-width: 963px;
+        width: 100%;
         height: 561px;
         background-position: center;
         background-repeat: no-repeat;
@@ -1222,3 +1225,136 @@
 }
 
 //end trade
+
+//start feedback
+
+.feedback {
+
+    &__inner {
+        text-align: center;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        .slick-list {
+            margin-right: 12px;
+        }
+    }
+
+
+    &__item {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.08);
+        max-width: 555px;
+        padding: 50px 40px 25px 40px;
+        border-left: 2px solid $blue;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__avatar { 
+        width: 80px;
+        height: 80px;
+    }
+
+    &__info {
+        margin-top: 12px;
+        line-height: 40px;
+        text-align: left;
+    }
+
+    &__products {
+        margin-left: 20px;
+    }
+
+    &--bubble {
+        color: #e8e8e8;
+        font-size: 60px;
+        margin-bottom: 25px;
+    }
+
+    &__text {
+        margin-top: 25px;
+        line-height: 30px;
+    }
+
+    &__btns {
+        text-align: center;
+    }
+
+    &__btn {
+        margin-bottom: 120px;
+    }
+
+}
+
+//end feedback
+
+//start news
+
+.news {
+    background-color: $bg;
+    padding: 155px 0 115px;
+    &__inner {
+        text-align: center;
+    }
+
+    &__info {
+        padding: 20px 28px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        color: #999;
+    }
+
+    &__title {
+        font-weight: 700;
+        padding-right: 7px;
+        overflow: hidden;
+    }
+
+    &--clock {
+        color: $blue;
+        margin-right: 20px;
+    }
+
+    &__time {
+        border-right: 1px solid #ececec;
+        padding-right: 30px;
+    }
+
+    &__btns {
+        margin-left: 17px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        color: #7e7e7e;
+    }
+
+    &__comments {
+        position: relative;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 2px;
+    }
+
+    &__numb {
+        margin-left: 25px;
+    }
+
+}
+
+//end news
+
+  
