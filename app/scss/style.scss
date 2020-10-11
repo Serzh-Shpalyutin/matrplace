@@ -271,7 +271,9 @@
 .btn--white {
     background-color: #fff;
     color: $blue;
-
+    border-radius: 30px;
+    padding: 16px 30px;
+    transition: all .3s;
     &:hover {
         background: transparent;
         color: #fff;
@@ -1158,3 +1160,65 @@
 }
 
 //end choose
+
+//start trade 
+
+.trade {
+    &__inner {
+        display: flex;
+    }
+
+    &__bg {
+        position: relative;
+        width: 963px;
+        height: 561px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    &__content {
+        position: absolute;
+        max-width: 600px;
+        top: 100px;
+        left: 170px;
+        text-align: center;
+        color: #fff;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 120px;
+        height: 101px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 48px;
+    }
+
+    &--buy {
+        width: 100px;
+        height: 100px;
+    }
+
+    &__title {
+        font-size: 36px;
+        line-height: 30px;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        line-height: 30px;
+        margin-bottom: 45px;
+    }
+
+    &__btn {
+        border: 1px solid transparent;
+        &:hover {
+            border: 1px solid #fff;
+        }
+    }
+}
+
+//end trade
