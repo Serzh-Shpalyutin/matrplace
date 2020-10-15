@@ -51,14 +51,15 @@ a {
 }
 
 .btn {
+    color: #fff;
+    background-color: $blue;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    border: none;
     border-radius: 30px;
     text-align: center;
     transition: all .3s;
-    cursor: pointer;
-    padding: 16px 31px;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
-    border: none;
-    outline-color: transparent;
+    outline-width: 0;
 
     &:hover {
         color: #2c80ed;
@@ -66,50 +67,94 @@ a {
     }
 
     &:active {
-        outline-color: transparent;
         color: #d6dde6;
     }
 
-    &:focus {
-        outline-color: transparent;
+    &:active {
+        background-color: transparent;
+        color: #d6dde6;
     }
 
     &--white {
         background-color: #fff;
         color: $blue;
         border: 1px solid transparent;
+        border-radius: 30px;
+        cursor: pointer;
+        outline-width: 0;
+        text-align: center;
+        transition: all .3s;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        &:hover {
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            background-color: transparent;
+            border: 1px solid #fff;
+            color:#fff;
+        }
+    }
+
+    &--tran {
+        border: 1px solid #fff;
+        background-color: transparent;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        border-radius: 30px;
+        text-align: center;
+        transition: all .3s;
+        outline-width: 0;
+        color: #fff;
         
         &:hover {
-            background-color: transparent;
-            color: #fff;
-            border: 1px solid #fff;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            color: #2c80ed;
+            background-color: #fff;
         }
-
+    
         &:active {
-            outline-color: transparent;
+            color: #d6dde6;
+        }
+    
+        &:active {
             background-color: transparent;
             color: #d6dde6;
         }
     }
 
-    &--small {
-        padding: 10px 20px;
-    }
-
-    &--transparent {
-        background-color: transparent;
-        border: 1px solid #fff;
-    }
-
     &--blue {
-        padding: 9px 14px;
         background-color: $blue;
         color: #fff;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        text-align: center;
+        transition: all .3s;
+        outline-width: 0;
+
+        &:hover {
+            background-color: #e6f1fd;
+            color: $blue;
+        }
+    }
+
+    &__hover--blue {
+        background-color: #f1f3f6;
+        color: #8f949d;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        border: none;
+        border-radius: 30px;
+        text-align: center;
+        transition: all .3s;
+        outline-width: 0;
+
         &:hover {
             background-color: $blue;
             color: #fff;
         }
     }
+
 }
 
 .visually-hidden {

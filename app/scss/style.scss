@@ -197,7 +197,7 @@
 
 // end header
 
-// start search
+// start intro
 
 .intro {
     background-image: linear-gradient( 180deg, rgb(0,48,222) 0%, rgb(23,69,237) 54%, rgb(46,90,251) 100%);
@@ -210,25 +210,27 @@
         font-size: 60px;
         line-height: 70px;
         text-align: center;
-        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+        
     }
     
     &__title {
         font-weight: 400;
         margin-bottom: 10px;
-        
+        color: rgb(243, 243, 248);
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     }
-
+      
     &__title-allocated {
         display: block;
         font-weight: 700;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     &__text {
         font-size: 20px;
         font-weight: 500;
         line-height: 50px;
-        
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
     }
 
     &__btns {
@@ -237,6 +239,7 @@
     }
     
     &__btn {
+        padding: 17px 32px;
         margin: 6px 18px 170px;
     }
 }
@@ -337,7 +340,7 @@
     }
 }
 
-// end search
+// end intro
 
 //start features
 
@@ -413,14 +416,6 @@
         padding-left: 130px;
     }
 
-    &__btn-hover {
-        color: #fff;
-    }
-
-    .btn--white.weekly__btn-hover  {  
-        
-    }
-
     &__img {
         width: 555px;
         height: 450px;
@@ -467,9 +462,6 @@
 
     &__tag-btn {
         padding: 2px 14px;
-        background-color: #f1f3f6;
-        color: #8f949d;
-        border-radius: 30px;
         font-size: 15px;
         box-shadow: none;
 
@@ -661,10 +653,14 @@
     }
 
     &__btn-box {
-        margin-top: 30px;
+        margin-top: 39px;
         display: flex;
         justify-content: center;
         padding-bottom: 120px;
+    }
+
+    &__btn-bottom {
+        padding: 18px 33px;
     }
 
     &__btns .mixitup-control-active {
@@ -777,7 +773,8 @@
         padding: 3px 17px;
         background-color: #e6f1fd;
         border-radius: 30px;
-        
+        box-shadow: none;
+
         &:hover {
             background-color: $blue;
             color: #fff;
@@ -822,22 +819,12 @@
     }
     
     &__btn {
-        background-color: transparent;
         font-size: 14px;
-        border: 1px solid #fff;
         padding: 13px 28px; 
         margin: 0px 10px;
-        color: #fff;
-        
-        &:hover {
-            color: #fff;
-            background-color: transparent;
-            border: 1   px solid #fff;
-        }
+    
     }
 }
-
-
 
 // end products
 
@@ -1241,4 +1228,7 @@
 }
 
 //end advantages
+
+
+
 
