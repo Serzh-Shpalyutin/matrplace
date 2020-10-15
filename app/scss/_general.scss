@@ -17,9 +17,16 @@ body {
 }
 
 a {
-    display: inline-block;
     text-decoration: none;
-    color: inherit;
+    color: currentColor;
+
+    &:focus {
+        box-shadow: none;
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
 }
 
 .container {
@@ -29,10 +36,86 @@ a {
     margin: 0 auto;
 }
 
+.logo {
+    padding-left: 15px;
+}
+
+.title {
+    color: #000;
+    font-size: 30px;
+    background-color: #fff;
+    width: 100%;
+    padding: 30px 80px 30px 30px;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+}
+
 .btn {
-    border-radius: 25px;
+    border-radius: 30px;
     text-align: center;
-    background-color: $blue;
     transition: all .3s;
     cursor: pointer;
+    padding: 16px 31px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+    outline-color: transparent;
+
+    &:hover {
+        color: #2c80ed;
+        background-color: #fff;
+    }
+
+    &:active {
+        outline-color: transparent;
+        color: #d6dde6;
+    }
+
+    &:focus {
+        outline-color: transparent;
+    }
+
+    &--white {
+        background-color: #fff;
+        color: $blue;
+        border: 1px solid transparent;
+        
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+            border: 1px solid #fff;
+        }
+
+        &:active {
+            outline-color: transparent;
+            background-color: transparent;
+            color: #d6dde6;
+        }
+    }
+
+    &--small {
+        padding: 10px 20px;
+    }
+
+    &--transparent {
+        background-color: transparent;
+        border: 1px solid #fff;
+    }
+
+    &--blue {
+        padding: 9px 14px;
+        background-color: $blue;
+        color: #fff;
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
 }
